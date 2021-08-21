@@ -3,6 +3,7 @@ var targetBody = document.querySelector('body');
 var targetH3 = document.querySelector('h3');
 var targetColor1 = document.getElementById('color-1');
 var targetColor2 = document.getElementById('color-2');
+var targetRButton = document.getElementById('randomize');
 
 // Function to change css background property of body
 // with values from inputs
@@ -55,3 +56,9 @@ document.addEventListener('load', changeBackground());
 
 // This outputs css line for displayed background after page is loaded
 targetH3.addEventListener('load', outputH3());
+
+// Random button and it's functionality
+targetRButton.addEventListener('click', function () {
+  randomColorInputs();
+  changeBackground();
+});
