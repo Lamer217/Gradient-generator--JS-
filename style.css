@@ -1,40 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font: 'Raleway', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  top: 15%;
-  background: linear-gradient(to right, #cc554b, #785979); /* Standard syntax */
 }
 
 h1 {
-  overflow: hidden;
-  font: 600 7vw 'Raleway', sans-serif;
-  color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3.5vw;
-  width: 100%;
-  caret-color: rgba(0, 0, 0, 0);
-}
-
-h1:hover {
-  cursor: default;
+  font-size: 7vw;
+  letter-spacing: 1vw;
+  margin-top: 3vw;
 }
 
 h2 {
-  caret-color: rgba(0, 0, 0, 0);
-}
-
-h2:hover {
-  cursor: default;
+  font-size: 5vw;
+  letter-spacing: 0.5vw;
+  margin-bottom: 1vw;
 }
 
 h3 {
-  font: 900 1em 'Raleway', sans-serif;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 4vw;
   text-align: center;
-  text-transform: none;
-  letter-spacing: 0.01em;
+}
+
+.content-wrapper {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inputs-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input {
+  box-sizing: content-box;
+  /* padding: 1vw; */
+  height: 280%;
+  width: 17%;
+}
+
+.output-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  /* height: 40%; */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
